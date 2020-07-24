@@ -36,7 +36,7 @@ EOF
 
 read -p "Plese input the domain of your website:" domain
 if [ -w /etc/caddy/Caddyfile ];then
-cat <<EOF >etc/caddy/Caddyfile
+cat <<EOF >/etc/caddy/Caddyfile
 $domain {
     log {
         output file /etc/caddy/caddy.log
