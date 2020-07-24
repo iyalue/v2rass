@@ -35,7 +35,7 @@ cat <<EOF >/etc/v2ray/config.json
 EOF
 
 read -p "Plese input the domain of your website:" domain
-if [-w etc/caddy/Caddyfile ];then
+if [ -w /etc/caddy/Caddyfile ];then
 cat <<EOF >etc/caddy/Caddyfile
 $domain {
     log {
